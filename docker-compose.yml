@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+
+  php_src:
+    container_name: php_src
+    image: php_src
+    volumes:
+      - ./app:/app
+    env_file:
+      - .env
